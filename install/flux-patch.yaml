@@ -2,7 +2,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flux
+  labels:
+    app: flux
 spec:
+  selector:
+    matchLabels:
+      app: flux
   template:
     spec:
       containers:

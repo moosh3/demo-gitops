@@ -1,0 +1,21 @@
+dependencies:
+  api:
+    sha: 4b064f75ad8f6cd93521b0527e9ec9fc60f42900
+  client-go:
+    sha: 289a91f51a8e5dafc058e038ab737621273fb984
+  cni:
+    sha: f9f1a1481a9d21b783ce4545d96a17e09f65f22b
+  gogo-genproto:
+    sha: d3e214cd829acb60b7be007b636f0c7eb023d0a1
+  istio:
+    sha: 68d381dde45b34f82a7247f20840829f1ee56fc1
+  pkg:
+    sha: 25e6bb9cf135c1db0cdcb50788b59c41ae1b784b
+  proxy:
+    sha: 54fd05bc1e3e59a155651e5c84e4138d849e8d58
+  test-infra:
+    sha: 48d88083edbccd5e7ca037dd9b9f2b6d19f5359a
+  tools:
+    sha: e4854ec4cc0d80ff937d8f77add15198023b3f78
+docker: docker.io/istio
+version: 1.5.2
