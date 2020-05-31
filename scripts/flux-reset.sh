@@ -12,11 +12,11 @@ if [[ ! -x "$(command -v helm)" ]]; then
     exit 1
 fi
 
-helm -n flux delete flux
-kubectl -n istio-system delete istiooperators.install.istio.io --all
-helm -n flux delete helm-operator
-helm -n istio-system delete flagger
-helm -n istio-system delete flagger-grafana
-kubectl delete ns istio-system
-kubectl delete ns istio-operator
-kubectl delete ns flux
+helm -n flux delete flux || true
+kubectl -n istio-system delete istiooperators.install.istio.io --all || true
+helm -n flux delete helm-operator || true
+helm -n istio-system delete flagger || true
+helm -n istio-system delete flagger-grafana || true
+kubectl delete ns istio-system || true
+kubectl delete ns istio-operator || true
+kubectl delete ns flux || true
